@@ -25,13 +25,13 @@
     <br>
     <form action="" method="GET">
         <label for="censored_word"></label>
-        <input type="text" name="censored_word" id="censored_word">
+        <input type="text" name="censored_word" id="censored_word" placeholder="Inserisci una parola da censurare" style="width:300px">
         <button>Censura la Parola</button>
     </form>
     <p>Hai selezionato la parola = <?php echo $censored_word ?></p>
     <br>
     <br>
-    <h1><?= "${second_title} senza la parola '${censored_word}'" ?></h1>
+    <h2><?php echo $second_title . ' senza la parola:' . '<h1 style="color: red; text-transform: uppercase;">' . $censored_word . '</h1>' ?></h2>
     <br>
     <br>
     <h2><?php echo $censored_string ?></h2>
